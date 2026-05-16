@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "csknife",
+  "version": "${version}",
+  "name": "CS Karambit Knife",
+  "description": "Replaces all swords with a CS2-style Karambit knife with inspect animations! Client-only, works on any server.",
+  "authors": ["Gandalf"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "main": ["com.csknife.CsKnifeMod"],
+    "client": ["com.csknife.client.CsKnifeClientMod"]
+  },
+  "mixins": [
+    "csknife.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.11"
+  }
+}
